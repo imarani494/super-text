@@ -17,11 +17,6 @@ A Firebase account and Firestore setup.
 Installation
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/yourusername/event-creation-app.git
-cd event-creation-app
-Install dependencies:
 
 bash
 Copy code
@@ -47,6 +42,28 @@ Run the app:
 bash
 Copy code
 npm start
+event-creation-app/
+├── public/
+│   ├── index.html             # Main HTML file, entry point for React
+│   └── favicon.ico            # App icon
+├── src/
+│   ├── assets/                # Folder for static assets (images, icons, etc.)
+│   ├── components/            # React components
+│   │   ├── EventForm.js       # Form to create events
+│   │   ├── EventList.js       # Displays the list of created events
+│   │   └── EventCard.js       # Individual event card
+│   ├── firebase/              # Firebase configuration and setup
+│   │   └── firebase.js        # Firebase configuration file
+│   ├── App.js                 # Main App component
+│   ├── index.js               # Entry point for React app, renders App component
+│   ├── styles/                # Custom styles (optional, if not using Tailwind)
+│   │   └── main.css           # Main custom styles
+│   └── .env                   # Firebase environment variables (DO NOT commit this file)
+├── .gitignore                 # Specifies files/folders to ignore in Git
+├── package.json               # NPM dependencies and project scripts
+├── README.md                  # Project documentation
+├── tailwind.config.js         # Tailwind CSS configuration
+└── postcss.config.js          # PostCSS configuration for Tailwind
 
 
 Usage
